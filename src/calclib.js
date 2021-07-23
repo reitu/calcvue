@@ -39,8 +39,8 @@ export function bodmas(stringNum) {
         }
     ]
 
-    signs.forEach((element) => { //the const caters for the element.thing part
-        const {fn, sign} = element //decomposition, we are extracting them as properties as they asre
+    signs.forEach((element) => { 
+        const {fn, sign} = element //decomposition
         while (arrNum.includes(sign)) {
             var signPlace = arrNum.findIndex(function (element) {
                 return element == sign;
