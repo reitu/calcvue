@@ -1,5 +1,4 @@
 <template>
-  <h1 style="text-align: center">Reitu's Calculator</h1>
   <div class="calculator">
     <div class="screen">{{ sum || answer }}</div>
     <div class="num-group">
@@ -107,17 +106,19 @@ export default {
 };
 </script>
 
-<style scoped>
-.body {
+<style>
+html {
   background-color: black;
 }
+</style>
+<style scoped>
 
 .calculator {
   background-color: white;
   border: 12px solid white;
   border-radius: 8px;
   width: 280px;
-  height: 350px;
+  height: 400px;
   text-align: center;
   position: relative;
   justify-content: space-between;
